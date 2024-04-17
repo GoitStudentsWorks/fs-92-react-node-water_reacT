@@ -12,5 +12,5 @@ export default defineConfig({
       assets: '/src/assets',
     },
   },
-  base: '/water_reacT/',
+  base: '/fs-92-react-node-water_reacT/',
 });
