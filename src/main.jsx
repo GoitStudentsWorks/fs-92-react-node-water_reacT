@@ -11,7 +11,7 @@ import '../i18n';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/water_reacT">
+    <BrowserRouter basename="/fs-92-react-node-water_reacT">
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
           <Global styles={GlobalStyles} />
