@@ -1,29 +1,33 @@
-import{u as i,L as y,d as v,b as S,B as $,D as P,E as d,F as B,G as E,r as u,j as e,z as C,l as g}from"./index-b2feaff9.js";import{d as U,b as R,t as W,a as F,m as T}from"./BackgroundDesktopIn-15fc0f11.js";const q=i.section`
+import{n as i,L as w,b,d as f,r as x,B as k,j as e,z as y,l as j,C as v,q as S}from"./index-3c57d7d4.js";import{d as B,b as E,t as I,a as C,m as $}from"./BackgroundDesktopIn-15fc0f11.js";const W=i.div``,P=i.section`
   display: flex;
   flex-direction: column-reverse;
 
   padding-top: 24px;
 
-  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column-reverse;
+
+    padding-top: 24px;
+  }
 
   @media screen and (min-width: 1440px) {
     background-repeat: no-repeat;
-    background-image: url(${U});
+    background-image: url(${B});
   }
-`,z=i.div`
+`,T=i.div`
   display: flex;
   flex-direction: column;
-  gap: 13px;
+  gap: 16px;
   width: 100%;
   align-items: flex-start;
-  background-image: url(${R});
+  background-image: url(${E});
 
   @media screen and (min-width: 768px) {
     position: relative;
-    background-image: url(${W});
+    background-image: url(${I});
     width: 720px;
     height: 658px;
-    background-position: -35px;
     background-position: -35px;
     background-position-y: -70px;
     background-repeat: no-repeat;
@@ -35,14 +39,14 @@ import{u as i,L as y,d as v,b as S,B as $,D as P,E as d,F as B,G as E,r as u,j a
     padding-top: 135px;
     padding-left: 840px;
 
-    background: url(${F});
+    background: url(${C});
     background-repeat: no-repeat;
 
     width: 1404px;
     height: 582px;
   }
 `,L=i.div`
-  background-image: url(${T});
+  background-image: url(${$});
   background-size: contain;
   background-repeat: no-repeat;
   width: 280px;
@@ -52,22 +56,21 @@ import{u as i,L as y,d as v,b as S,B as $,D as P,E as d,F as B,G as E,r as u,j a
   @media screen and (min-width: 768px) {
     background-image: none;
   }
-`,V=i.h2`
+`,z=i.h2`
   font-weight: 500;
   font-size: 26px;
   line-height: 1.23077;
   color: var(--primery-color-black);
-`,p=i.label`
+`,c=i.label`
   display: flex;
-  gap: 160px;
+  gap: 16px;
   margin-bottom: 5px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.33333;
   color: var(--primery-color-black);
-`,l=i.input`
-  border: 1px solid ${t=>t.$error?"red":"#d7e3ff"};
-
+`,h=i.input`
+  border: 1px solid ${n=>n.error?"red":"#d7e3ff"};
   border-radius: 6px;
   padding: 12px 10px;
   width: 280px;
@@ -76,8 +79,7 @@ import{u as i,L as y,d as v,b as S,B as $,D as P,E as d,F as B,G as E,r as u,j a
   outline: none;
 
   @media screen and (min-width: 768px) {
-    border: 1px solid ${t=>t.$error?"red":"#d7e3ff"};
-
+    border: 1px solid ${n=>n.error?"red":"#d7e3ff"};
     border-radius: 6px;
     padding: 12px 10px;
     width: 336px;
@@ -85,25 +87,24 @@ import{u as i,L as y,d as v,b as S,B as $,D as P,E as d,F as B,G as E,r as u,j a
   }
 
   @media screen and (min-width: 1440px) {
-    border: 1px solid ${t=>t.$error?"red":"#d7e3ff"};
+    border: 1px solid ${n=>n.error?"red":"#d7e3ff"};
     border-radius: 6px;
     padding: 12px 10px;
     width: 384px;
     height: 44px;
   }
-`,I=i.button`
+`,F=i.button`
   width: 280px;
   height: 36px;
   padding: 10px;
 
   box-shadow: 0 4px 8px 0 rgba(64, 123, 255, 0.34);
-  background: var(--primery-color-blue);
 
+  background: var(--primery-color-blue);
   color: var(--primery-color-white);
   border: none;
   border-radius: 10px;
   cursor: pointer;
-
   transition: box-shadow 500ms ease-in-out;
 
   &:hover {
@@ -129,13 +130,13 @@ import{u as i,L as y,d as v,b as S,B as $,D as P,E as d,F as B,G as E,r as u,j a
     width: 384px;
     height: 44px;
   }
-`,w=i.span`
+`,V=i.button`
   display: flex;
   position: absolute;
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
-  cursor: pointer;
+
   svg {
     width: 16px;
     height: 16px;
@@ -143,18 +144,17 @@ import{u as i,L as y,d as v,b as S,B as $,D as P,E as d,F as B,G as E,r as u,j a
     fill: transparent;
 
     stroke: #407bff;
+    background-color: #fff;
   }
 
   @media screen and (min-width: 1440px) {
     right: -30px;
   }
-`,x=i.div`
-  -webkit-text-fill-color: red;
-
-  margin-bottom: 10px;
-`,D=i.form`
+`,d=i.div`
+  color: red;
+  margin-top: 5px;
+`,q=i.form`
   display: flex;
-
   flex-direction: column;
   justify-content: center;
 
@@ -163,10 +163,10 @@ import{u as i,L as y,d as v,b as S,B as $,D as P,E as d,F as B,G as E,r as u,j a
   @media screen and (min-width: 768px) {
     width: 336px;
   }
-`,G=i(y)`
+`,D=i(w)`
   display: flex;
   align-items: center;
-`,M=i.p`
+`,G=i.p`
   color: var(--primery-color-blue);
   font-size: 16px;
   transition: color 500ms ease-in-out;
@@ -174,7 +174,7 @@ import{u as i,L as y,d as v,b as S,B as $,D as P,E as d,F as B,G as E,r as u,j a
   &:hover {
     color: var(--secondary-color-5);
   }
-`,n=i.div`
+`,o=i.div`
   position: absolute;
 
   background-color: #79b8ff;
@@ -189,7 +189,7 @@ import{u as i,L as y,d as v,b as S,B as $,D as P,E as d,F as B,G as E,r as u,j a
       background-color: #f3ecec;
     }
   }
-`,O=i(n)`
+`,M=i(o)`
   @media screen and (min-width: 768px) {
     top: 210px;
     left: 500px;
@@ -202,7 +202,7 @@ import{u as i,L as y,d as v,b as S,B as $,D as P,E as d,F as B,G as E,r as u,j a
     width: 20px;
     height: 20px;
   }
-`,Y=i(n)`
+`,R=i(o)`
   @media screen and (min-width: 768px) {
     top: 43%;
     left: 56%;
@@ -215,7 +215,7 @@ import{u as i,L as y,d as v,b as S,B as $,D as P,E as d,F as B,G as E,r as u,j a
     width: 27px;
     height: 27px;
   }
-`,A=i(n)`
+`,U=i(o)`
   @media screen and (min-width: 768px) {
     top: 60%;
     left: 50%;
@@ -228,7 +228,7 @@ import{u as i,L as y,d as v,b as S,B as $,D as P,E as d,F as B,G as E,r as u,j a
     width: 20px;
     height: 20px;
   }
-`,H=i(n)`
+`,Y=i(o)`
   @media screen and (min-width: 768px) {
     top: 72%;
     left: 66.5%;
@@ -241,7 +241,7 @@ import{u as i,L as y,d as v,b as S,B as $,D as P,E as d,F as B,G as E,r as u,j a
     width: 27px;
     height: 27px;
   }
-`,J=i(n)`
+`,A=i(o)`
   @media screen and (min-width: 768px) {
     top: 64.2%;
     left: 61.4%;
@@ -254,4 +254,4 @@ import{u as i,L as y,d as v,b as S,B as $,D as P,E as d,F as B,G as E,r as u,j a
     width: 40px;
     height: 40px;
   }
-`,Q=()=>{const t=v(),{t:a}=S(),r=$({initialValues:{email:"",password:"",repeatPassword:""},validationSchema:P({email:d().email(a("Invalid email address")).required(a("Required")),password:d().min(6,a("Password must be at least 6 characters")).required(a("Required")),repeatPassword:d().oneOf([B("password"),null],a("Passwords must match")).required(a("Required"))}),onSubmit:(s,{setSubmitting:m})=>{t(E({email:s.email,password:s.password})).then(o=>{o.error&&o.error.message==="Rejected"&&r.setFieldError("email",a("This email is already registered")),m(!1)}).catch(o=>{o.response&&o.response.status===409?r.setFieldError("email",a("This email is already registered")):console.error(`${a("Error:")} ${o}`),m(!1)})}}),[h,b]=u.useState(!1),[c,f]=u.useState(!1),k=()=>{b(s=>!s)},j=()=>{f(s=>!s)};return e.jsx(C,{children:e.jsxs(q,{children:[e.jsx(L,{}),e.jsxs(z,{children:[e.jsx(V,{children:a("Sign Up")}),e.jsx(O,{}),e.jsx(Y,{}),e.jsx(A,{}),e.jsx(H,{}),e.jsx(J,{}),e.jsxs(D,{onSubmit:r.handleSubmit,children:[e.jsx(p,{children:a("Enter your email")}),e.jsx(l,{type:"email",name:"email",placeholder:"E-mail",value:r.values.email,onChange:r.handleChange,onBlur:r.handleBlur,$error:r.touched.email&&r.errors.email}),r.touched.email&&r.errors.email&&e.jsx(x,{children:r.errors.email}),e.jsx(p,{children:a("Enter your password")}),e.jsxs("div",{style:{position:"relative"},children:[e.jsx(l,{type:h?"text":"password",name:"password",placeholder:a("Password"),value:r.values.password,onChange:r.handleChange,onBlur:r.handleBlur,$error:r.touched.password&&r.errors.password}),e.jsx(w,{type:"button",onClick:k,children:e.jsx("svg",{children:e.jsx("use",{href:`${g}#${h?"eye":"eye-slash"}`})})})]}),r.touched.password&&r.errors.password&&e.jsx(x,{children:r.errors.password}),e.jsx(p,{children:a("Repeat password")}),e.jsxs("div",{style:{position:"relative"},children:[e.jsx(l,{type:c?"text":"password",name:"repeatPassword",placeholder:a("Repeat Password"),value:r.values.repeatPassword,onChange:r.handleChange,onBlur:r.handleBlur,$error:r.touched.repeatPassword&&r.errors.repeatPassword}),e.jsx(w,{type:"button",onClick:j,children:e.jsx("svg",{children:e.jsx("use",{href:`${g}#${c?"eye":"eye-slash"}`})})})]}),r.touched.repeatPassword&&r.errors.repeatPassword&&e.jsx(x,{children:r.errors.repeatPassword}),e.jsx(I,{type:"submit",disabled:!r.isValid||r.isSubmitting,children:a("Sign Up")}),e.jsx(G,{to:"/signin",children:e.jsx(M,{children:a("Sign In")})})]})]})]})})};export{Q as default};
+`,K=()=>{const{t:n}=b(),s=f(),[p,m]=x.useState(!1),[g,l]=x.useState(""),u=()=>{m(t=>!t)},r=k({initialValues:{email:"",password:""},validate:t=>{const a={};return(!t.email||!t.email.includes("@"))&&(a.email=n("Email is invalid")),(!t.password||t.password.length<6)&&(a.password=n("Password is invalid")),a},onSubmit:async t=>{try{if(!t.password){l("Password is required");return}await s(v({email:t.email,password:t.password})),await s(S())}catch{l("Invalid email or password. Please try again.")}}});return e.jsx(W,{children:e.jsx(y,{children:e.jsxs(P,{children:[e.jsx(L,{}),e.jsxs(T,{children:[e.jsx(z,{children:n("Sign In")}),e.jsx(M,{}),e.jsx(R,{}),e.jsx(U,{}),e.jsx(Y,{}),e.jsx(A,{}),e.jsxs(q,{onSubmit:r.handleSubmit,children:[e.jsx(c,{children:n("Enter your email")}),e.jsx(h,{type:"email",name:"email",placeholder:"E-mail",value:r.values.email,onChange:r.handleChange,onBlur:r.handleBlur,autoComplete:"email",error:r.touched.email&&r.errors.email}),r.touched.email&&r.errors.email&&e.jsx(d,{children:r.errors.email}),e.jsx(c,{children:n("Enter your password")}),e.jsxs("div",{style:{position:"relative"},children:[e.jsx(h,{type:p?"text":"password",name:"password",placeholder:n("Password"),value:r.values.password,onChange:r.handleChange,onBlur:r.handleBlur,error:r.touched.password&&r.errors.password}),e.jsx(V,{type:"button",onClick:u,children:e.jsx("svg",{children:e.jsx("use",{href:`${j}#${p?"eye":"eye-slash"}`})})})]}),r.touched.password&&r.errors.password&&e.jsx(d,{children:r.errors.password}),g&&e.jsx(d,{children:"(loginError)"})," ",e.jsx(F,{type:"submit",disabled:!r.isValid,children:n("Sign In")})]}),e.jsx(D,{to:"/signup",children:e.jsx(G,{children:n("Sign Up")})})]})]})})})};export{K as default};

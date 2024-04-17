@@ -1,4 +1,4 @@
-import{u as n,b as d,j as e,l as a,L as x,z as p}from"./index-b2feaff9.js";const l=n.div``,h=n.h1`
+import{u as n,b as d,j as e,l as a,L as x,z as p}from"./index-3c57d7d4.js";const l=n.div``,h=n.h1`
   color: var(--primery-color-black);
   font-size: 28px;
   margin-bottom: 16px;
